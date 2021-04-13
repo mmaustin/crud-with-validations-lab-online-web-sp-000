@@ -4,6 +4,7 @@ class ReleaseYearValidator < ActiveModel::Validator
         unless record.release_year.to_s <= Date.today.to_s
           record.errors[:release_year] << "This release year is invalid."
         end
-      end
+    end
     #end
+
 end
